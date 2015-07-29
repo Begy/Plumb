@@ -1,0 +1,56 @@
+<html>
+<head>
+</head>
+<body>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<h1 style="font-size:32px; text-decoration: underline overline; text-align: center;">Alege imaginea corect&#259;</h1></font><br>
+<div id="1"  style="display:none;">Galen&#259;</div><div style="display:none;" id="2">PbCO<sub>3</sub></div><div style="display:none;" id="3">Alexandru Macendonski</div><div style="display:none;" id="4">George Bacovia</div>
+<img src="map.jpg" id="poza" width="300px" height="300px" usemap="#imagini">
+<map name="imagini">
+	  <area shape="rect" coords="0,150,150,0" id="11">
+	  <area shape="rect" coords="150,150,300,0" id="22">
+	  <area shape="rect" coords="150,150,0,300" id="33">
+	  <area shape="rect" coords="150,150,300,300" id="44">
+</map>
+<script>
+	$(function() {
+			$('#11').on('click', function() {
+			 $('#1').fadeIn(500);
+			 $('#2').fadeOut(500);
+			 $('#3').fadeOut(500);
+			 $('#4').fadeOut(500);
+			});
+	});
+</script>
+<script>
+	$(function() {
+			$('#22').on('click', function() {
+			 $('#2').fadeIn(500);
+			 $('#1').fadeOut(500);
+			 $('#3').fadeOut(500);
+			 $('#4').fadeOut(500);
+			});
+	});
+</script>
+<script>
+	$(function() {
+			$('#33').on('click', function() {
+			 $('#3').fadeIn(500);
+			 $('#1').fadeOut(500);
+			 $('#2').fadeOut(500);
+			 $('#4').fadeOut(500);
+			});
+	});
+</script>
+<script>
+	$(function() {
+			$('#44').on('click', function() {
+			 $('#4').fadeIn(500);
+			 $('#1').fadeOut(500);
+			 $('#2').fadeOut(500);
+			 $('#3').fadeOut(500);
+			});
+	});
+</script>
+</body>
+</html>

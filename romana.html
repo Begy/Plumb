@@ -1,0 +1,364 @@
+<html>
+<head>
+	<title>Plumbul in rom&#226;n&#259;</title>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+	<style>
+	html{
+		overflow: auto;
+	}
+	p{
+		font-size:22px;
+		font-family: 'Fertigo', sans serif;
+	}
+	.poza{
+		width: 30px;
+		height: 30px;
+	}
+	.poza1{
+		width: 300px;
+		height: 300px;
+		display: none;
+	}
+	.celula{
+		border: 1px solid black;
+		background-color: #C36241;
+		border-radius: 5px;
+		width: 440px;
+	}
+	.drept{
+		width: 75%;
+		height: 20px;
+		border-left: 1px solid #B41000;
+		border-bottom: 1px solid #B41000;
+		padding-bottom: 3px;
+	}
+	#check{
+		position: absolute;
+		padding-right: 10px;
+		right: 3px;
+		margin-top: 0px;
+		cursor: pointer;
+	}
+	</style>
+	<script>
+	function allowDrop(ev) {
+		ev.preventDefault();
+	}
+
+	function drag(ev) {
+		ev.dataTransfer.setData("text", ev.target.id);
+	}
+
+	function drop(ev) {
+		ev.preventDefault();
+		var data = ev.dataTransfer.getData("text");
+		ev.target.appendChild(document.getElementById(data));
+	}
+	</script>
+</head>
+<body>
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js" type="text/javascript"></script>
+	<script src="http://iamdanfox.github.io/typetype/jquery.typetype.min.js" type="text/javascript"></script>
+	<table border="0" align="center">
+		<tr>
+			<td width="25%">
+				<div align="center" id="po1"><img src="button.png" class="poza">
+					<img src="p1" id="poza1" class="poza1">
+				</div>
+				<script type="text/javascript">	
+				$(function() {
+					$('#po1').on('click', function() {
+						$('#poza1').toggle(500);
+					});
+				});
+				</script>
+
+			</td>
+			<td width="50%">
+				<font size="28"><h1 style="font-size:32px; text-decoration: underline overline; text-align: center;">Plumbul - tematic&#259; abordat&#259; &#238;n literatura rom&#226;n&#259;</h1></font><br>
+				<p style="font-size:21px; text-align:center; font-family:copper black"><i>
+					Dormeau ad&#226;nc sicriele de plumb,<br>
+					&#350;i flori de plumb &#351;i funerar vestm&#226;nt-<br>
+					Stam singur &#238;n cavou... &#351;i era v&#226;nt...<br>
+					&#350;i sc&#226;r&#355;&#226;iau coroanele de plumb.<br>
+					<br>
+					Dormea &#238;ntors amorul meu de plumb<br>
+					Pe flori de plumb, &#351;i-am &#238;nceput s&#259;-l strig-<br>
+					Stam singur l&#226;ng&#259; mort... &#351;i era frig...<br>
+					&#350;i-i at&#226;rnau aripile de plumb.<br><br> </i></p>
+				</td>
+				<td width="25%">
+					<script>
+					function play(){
+						var audio = document.getElementById("audio");
+						if (audio.paused) {
+							audio.play();
+						}else{
+							audio.pause();
+							audio.currentTime = 0
+						}
+					}
+					</script>
+					<div align="center" id="po2"><img src="button.png" class="poza" onclick="play()">
+						<img src="Sa ascultam poezia.png" id="poza2" class="poza1">
+						<audio id="audio" src="plumb.mp3"></audio>
+					</div>
+					<script type="text/javascript">	
+					$(function() {
+						$('#po2').on('click', function(){
+							$('#poza2').toggle(500);
+						});
+					});
+					</script>
+				</td>
+			</tr>
+		</table>
+		<p style="padding-left:100px; font-family:times new roman"><b>&#149;<u>Date despre oper&#259;</u></b></p>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font id="coperta1" color="#B41000">Plumb</font> este o poezie scris&#259; de George Bacovia &#238;n 1900 &#351;i finisat&#259; &#238;n 1902. Discursul poetic
+			este conceput sub forma unui monolog tragic &#238;n care poetul exprim&#259; o stare sufleteasc&#259; de 
+			disperare, &#351;i lips&#259; a oric&#259;rei speran&#355;e. Poezia produce o puternic&#259; impresie la citirea ei de 
+			c&#259;tre autor &#238;n 1903 la salonul literar al lui <font id="alex1" color="#B41000"> Alexandru Macedonski.</font></p>
+			<img src="alexandru macedonski.jpg" id="alex" class="poza1">
+
+			<script type="text/javascript">	
+			$(function() {
+				$('#alex1').hover(function() {
+					$('#alex').toggle(500);
+				});
+				$('#alex1').hover(function() {
+					$('#alex1').css("color", "grey");
+				},function(){
+					$('#alex1').css("color", "#B41000");
+				});
+			});
+			</script>
+
+			<img src="coperta.jpg" id="coperta" class="poza1">
+
+			<script type="text/javascript">	
+			$(function() {
+				$('#coperta1').hover(function() {
+					$('#coperta').toggle(500);
+				});
+				$('#coperta1').hover(function() {
+					$('#coperta1').css("color", "grey");
+				},function(){
+					$('#coperta1').css("color", "#B41000");
+				});
+			});
+			</script>
+
+			<p style="padding-left:100px; font-family:times new roman"><b>&#149;<u>Date despsre autor</u></b></p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font id="gb1" color="#B41000">George Bacovia</font> (n. 17 septembrie 1881, Bac&#259;u - d. 22 mai 1957, Bucure&#351;ti) a fost un scriitor 
+				rom&#226;n format la &#351;coala simbolismului literar francez. Este autorul unor volume de versuri &#351;i 
+				proz&#259; scrise &#238;n baza unei tehnici unice &#238;n literatura rom&#226;n&#259;, cu v&#259;dite influen&#355;e din marii 
+				lirici moderni francezi pe care-i admira. La &#238;nceput v&#259;zut ca poet minor de critica literar&#259;, 
+				va cunoa&#351;te treptat o receptare favorabil&#259;, merg&#226;nd p&#226;n&#259; la recunoa&#351;terea sa ca cel mai important
+				poet <font id="simbol1" color="#B41000">simbolist</font> rom&#226;n &#351;i unul dintre cei mai importan&#355;i poe&#355;i din poezia rom&#226;n&#259; modern&#259;.</p>
+
+				<img src="gb2.jpg" id="gb" class="poza1">
+
+				<script type="text/javascript">	
+				$(function() {
+					$('#gb1').hover(function() {
+						$('#gb').toggle(500);
+					});
+					$('#gb1').hover(function() {
+						$('#gb1').css("color", "grey");
+					},function(){
+						$('#gb1').css("color", "#B41000");
+					});
+				});
+				</script>
+
+				<img src="simbolism.png" id="simbol" class="poza1">
+
+				<script type="text/javascript">	
+				$(function() {
+					$('#simbol1').hover(function() {
+						$('#simbol').toggle(500);
+					});
+					$('#simbol1').hover(function() {
+						$('#simbol1').css("color", "grey");
+					},function(){
+						$('#simbol1').css("color", "#B41000");
+					});
+				});
+				</script>
+
+				<p style="padding-left:100px; font-family:times new roman; color: #B41000" id="txt1"><b>&#149;<u>Apartenen&#355;&#259;</u></b></p>
+				<p id="div">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+				<script type="text/javascript">	
+				$(function() {
+					$('#txt1').on('click', function() {
+						$('#div').typetype("Acelasi titlu va fi purtat si de primul volum de versuri publicat de Bacovia, trimis la tipar in 1914 si aparut in luna iulie 1916. Pentru acest volum Bacovia este premiat de Ministerul Artelor in 1923. Editia a doua apare in 1924, iar in 1929 aceleasi versuri formeaza o parte din volumul 'Poezii'.", {
+							e: 0,
+							t: 20,
+						});
+					});
+				});
+				</script>
+
+				<p style="padding-left:100px; font-family:times new roman; color:#B41000" id="txt2"><b>&#149;<u>Alc&#259;tuire</u></b></p>
+
+				<p id="div2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+				<script type="text/javascript">	
+				$(function() {
+					$('#txt2').on('click', function() {
+						$('#div2').typetype("Poezia este alcatuita din 2 catrene, care corespund celor 2 planuri ale realitatii: realitatea exterioara, alcatuita din 'cimitir', 'cavoul', simboluri ale unui univers rece, ostil, care il impinge pe poet la izolare si disperare si realitatea interioara, sufleteasca, deprimanta pentru care nici iubirea invocata cu disperare nu este o sansa de salvare.", {
+							e: 0,
+							t: 20,
+
+						});
+					});
+				});
+
+				</script>
+				<table>
+					<tr>
+						<td>		
+							<p style="padding-left:100px; font-family:times new roman"><b>&#149;<u> Motive</u></b>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div width="250px" id="imp" style="font-size:22px; font-family: 'Fertigo', sans serif;">&#206;n poezie tema principal&#259; este moartea.</div><div  style="font-size:22px; font-family: 'Fertigo', sans serif;">
+								Cuv&#226;ntul-cheie al poeziei este "plumb", care are valoare de simbol, repeti&#355;ie &#351;i epitet. 
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div id="imp2" style="font-size:22px; font-family: 'Fertigo', sans serif;">Prima strof&#259; define&#351;te un univers rece, str&#259;in.</div> &#206;n acest univers poetul tr&#259;ie&#351;te sentimentul singur&#259;t&#259;&#355;ii tragice.
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div id="imp3" style="font-size:22px; font-family: 'Fertigo', sans serif;">Strofa a doua define&#351;te realitatea interioar&#259;.</div> Poetul invoc&#259; amorul, dar acesta doarme 
+								&#238;ntors cu fa&#355;a spre moarte.</p>
+								<p style="padding-left:100px; font-family:times new roman"><b>&#149; <u>Compozi&#355;ie, limbaj artistic, limbaj poetic
+								</u></b>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style="font-size:22px; font-family: 'Fertigo', sans serif;">Verbele la imperfect (dormeau, dormea, stam)
+								sugereaz&#259; persisten&#355;a atmosferei deprimante.</div><div id="imp4" style="font-size:22px; font-family: 'Fertigo', sans serif;"> Repeti&#355;ia conjunc&#355;iei "&#351;i" 
+								amplific&#259; atmosfera macabr&#259;:</div><div style="font-size:22px; font-family: 'Fertigo', sans serif;"> "&#351;i flori de plumb &#351;i funerar vestm&#226;nt - / ...&#351;i era v&#226;nt... / 
+								&#351;i sc&#226;r&#355;&#226;iau coroanele... &#351;i-am &#238;nceput s&#259;-l strig... &#351;i era frig... &#351;i-i at&#226;rnau aripile de plumb....".
+								Epitetele "ad&#226;nc", "&#238;ntors", "funerar", "singur" contribuie la realizarea unei nelini&#351;ti 
+								metafizice.</div><div id="imp5" style="font-size:22px; font-family: 'Fertigo', sans serif;"> La nivelul prozodic se constat&#259; folosirea iambului. </div>
+							</p> <br><br>
+						</p>
+					</td>
+					<td>
+						<div align="right"><img src="ce sa stiu.png" height="300px" width="300px" id="declan"></div>
+					</td>
+				</tr>
+			</table>
+			<div><br><br><br></div>
+			<table id="tab2">
+				<tr><td>	
+					
+				</td></tr>
+			</table>
+			<fieldset>
+				<legend><p style="font-size: 28px; color: #B41000;"><i>Plumb</i></p></legend>
+				<table width="100%">
+					
+					<tr>
+						<td width="50%">
+							<table>
+								<tr>
+									<p>Dormeau ad&#226;nc sicriele de plumb</p>
+								</tr>
+								<tr>
+									<div id="div1" class="drept" ondrop="drop(event)" ondragover="allowDrop(event)"></div> <br>
+								</tr>
+								<tr>
+									<div id="div2" class="drept" ondrop="drop(event)" ondragover="allowDrop(event)"></div> 
+								</tr>
+								<tr>
+									<p>&#350;i sc&#226;r&#355;&#226;iau coroanele de plumb.</p>
+								</tr>
+								<tr>
+									<br>
+								</tr>
+								<tr>
+									<br>
+								</tr>
+								<tr>
+									<p>Dormea &#238;ntors amorul meu de plumb</p>
+								</tr>
+								<tr>
+									<div id="div3" class="drept" ondrop="drop(event)" ondragover="allowDrop(event)"></div> <br>
+								</tr>
+								<tr>
+									<div id="div4" class="drept" ondrop="drop(event)" ondragover="allowDrop(event)"></div> 
+								</tr>
+								<tr>
+									<p>&#350;i-i at&#226;rnau aripile de plumb.<br><br><br><br></p>
+								</tr>
+								<tr>
+									<div id="div5" class="drept" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+								</tr>
+							</table>
+						</td>
+						<td width="50%">
+							<table width="100%">
+								<tr>
+									<td width="80%">
+										<p style="display: none;" id="poezia">
+											Dormeau ad&#226;nc sicriele de plumb,<br>
+											&#350;i flori de plumb &#351;i funerar vestm&#226;nt-<br>
+											Stam singur &#238;n cavou... &#351;i era v&#226;nt...<br>
+											&#350;i sc&#226;r&#355;&#226;iau coroanele de plumb.<br>
+											<br>
+											Dormea &#238;ntors amorul meu de plumb<br>
+											Pe flori de plumb, &#351;i-am &#238;nceput s&#259;-l strig-<br>
+											Stam singur l&#226;ng&#259; mort... &#351;i era frig...<br>
+											&#350;i-i at&#226;rnau aripile de plumb.<br><br>
+										</p>
+										
+										<p id="drag2" style="color: #B41000; cursor: pointer;" draggable="true" ondragstart="drag(event)">Stam singur l&#226;ng&#259; mort... &#351;i era frig... </p> <br>
+										<p id="drag1" style="color: #B41000; cursor: pointer;" draggable="true" ondragstart="drag(event)">&#350;i flori de plumb &#351;i funerar vestm&#226;nt- </p> <br>
+										<p id="drag3" style="color: #B41000; cursor: pointer;" draggable="true" ondragstart="drag(event)">Pe flori de plumb, &#351;i-am &#238;nceput s&#259;-l strig- </p> <br>
+										<p id="drag4" style="color: #B41000; cursor: pointer;" draggable="true" ondragstart="drag(event)"> Stam singur &#238;n cavou... &#351;i era v&#226;nt...</p> <br> 
+									</td>	
+									<td width="20%" style="padding: 0;">
+										<img src="check.png" width="100px" height="100px" id="check">
+									</td>
+								</tr>
+							</table>
+
+
+							<script type="text/javascript">	
+							$(function() {
+								$('#check').on('click', function() {
+									$('#poezia').toggle(800);
+								});
+							});
+							</script>
+						</table>
+
+					</td>
+				</tr>
+				
+			</table>
+		</fieldset>
+		<br>
+		<br>
+		<p>&bull; Alte leg&#259;turi &#238;n literatur&#259;: </p>
+		<div align="center">
+		<video src="SoldetelulDePlumb.mp4" width="480px" height="360px" controls>
+		</video>
+		</div>
+		<br>
+		<p> <i>
+			Sold&#259;&#355;elul de plumb, Hans Christian Andersen
+		</p></i>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br>
+		
+		<script type="text/javascript">
+		$(function(){
+			$('#declan').click( function() {
+				$('#imp').toggleClass("celula");
+				$('#imp2').toggleClass("celula");
+				$('#imp3').toggleClass("celula");
+				$('#imp4').toggleClass("celula");
+				$('#imp5').toggleClass("celula");
+
+				
+			});
+		});
+		</script>
+
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	</body>
+	</html>

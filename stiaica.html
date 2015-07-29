@@ -1,0 +1,231 @@
+<html>
+<head>
+	<title>Plumbul in chimie</title>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+	<style>
+	html{
+		overflow: auto;
+	}
+	.flip3D{ width:200px; height:200px; margin:10px; float:left; border-radius: 7px;}
+	.flip3D > .front{
+		position:absolute;
+		transform: perspective( 600px ) rotateY( 0deg );
+		background:#C11B17; width:200px; height:200px; border-radius: 7px;
+		backface-visibility: hidden;
+		transition: transform .5s linear 0s;
+	}
+	.flip3D > .back{
+		position:absolute;
+		transform: perspective( 600px ) rotateY( 180deg );
+		background: #E41B17; width:200px; height:200px; border-radius: 7px;
+		backface-visibility: hidden;
+		transition: transform .5s linear 0s;
+	}
+	.flip3D:hover > .front{
+		transform: perspective( 600px ) rotateY( -180deg );
+	}
+	.flip3D:hover > .back{
+		transform: perspective( 600px ) rotateY( 0deg );
+	}
+
+	</style>
+
+
+</head>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<center><h1 style="text-decoration: underline overline">Unde mai &#238;nt&#226;lnim plumbul ? </h1></center>
+<table border="0" cellpadding="15">
+	<tr>
+
+
+		<td>
+			<div class="flip3D">
+				<div class="back" align="center"><p style="margin-top: 40%"><b><p id="text1"><font size="6"> Construc&#355;ii </p></font></b></div>
+				<div class="front"><img src="wonder.png" width="200px" height="200px"></div>
+			</div>
+		</td>
+		<td width="250px" height="100px">
+			<p id="text2" style="display: none;  font-size: 24px;">Foi&#355;ele de plumb se folosesc ca material pentru acoperi&#351;, lambriuri, burlane pentru scurgere. Tot foi&#355;ele de plumb se folosesc &#351;i la izolarea fonic&#259;.</p>
+		</td>
+		<td>
+			<img class="poza" src="constructii.jpg" id="text21" width="200px" height="100px" style="display: none;">
+		</td>
+		<script type="text/javascript">	
+		$(function() {
+			$('#text1').on('click', function() {
+				$('#text2').show(1500);
+				$('#text21').fadeIn(1500);
+			});
+		});
+		</script>
+
+
+
+		<tr>
+
+
+			<td>
+				<div class="flip3D">
+					<div class="back" align="center"><p style="margin-top: 40%"><font size="20px"><b><p id="text3"> Gloan&#355;e </p></font></b></div>
+					<div class="front"><img src="wonder.png" width="200px" height="200px"></div>
+				</div>
+			</td>
+			<td  width="300px" height="100px">
+				<p id="text4" style="display:none; font-size: 24px;">Plumbul a fost folosit pentru proiectilele pra&#351;tiilor, proiectilele originale ale muschetelor, ast&#259;zi ale pu&#351;tilor. A fost interzis &#238;n fabricarea gloan&#355;elor pentru v&#226;n&#259;toarea p&#259;s&#259;rilor acvatice, &#351;i a fost &#238;nlocuit cu fier. </p>
+			</td>
+			<td>
+				<img class="poza" src="gloante.png" width="200px" height="200px" id="text41" style="display: none;">
+			</td>
+			<script type="text/javascript">	
+			$(function() {
+				$('#text3').on('click', function() {
+					$('#text4').show(1500);
+					$('#text41').fadeIn(1500);
+				});
+			});
+			</script>
+		</tr>
+		<tr>
+
+
+			<td>
+				<div class="flip3D">
+					<div class="back" align="center"><p style="margin-top: 40%"><font size="20px"><b><p id="text7"> Vitralii </p></font></b></div>
+					<div class="front"><img src="wonder.png" width="200px" height="200px"></div>
+				</div>
+			</td>
+
+			<td width="250px" height="100px">
+				<p id="text8" style="display: none;  font-size: 24px;">Plumbul este folosit &#351;i &#238;n zilele noastre la fabricarea vitraliilor. Sticla cu plumb, un alt obiect cu plumb, con&#355;ine 12-28% oxid de plumb. Plumbul modific&#259; propriet&#259;&#355;ilor optice ale sticlei, reduc&#226;nd transmisia radia&#355;iei.</p>
+			</td>
+			<td>
+				<img class="poza" src="vitralii.jpg" width="200px" height="200px" id="text81" style="display: none;">
+			</td>
+		</tr>
+
+		<script type="text/javascript">	
+		$(function() {
+			$('#text7').on('click', function() {
+				$('#text8').show(1500);
+				$('#text81').fadeIn(1500);
+			});
+		});
+		</script>
+		<tr>
+			<td>
+				<div class="flip3D">
+					<div class="back" align="center"><p style="margin-top: 40%"><font size="20px"><b><p id="text9"> Ruj </p></font></b></div>
+					<div class="front"><img src="wonder.png" width="200px" height="200px"></div>
+				</div>
+			</td>
+			<td width="250px" height="100px">
+				<p id="text10" style="display: none;  font-size: 24px;"> Prezen&#355;a plumbului &#238;n ruj este legat&#259; de rezisten&#355;a acestuia, d&#226;ndui aderen&#355;&#259; acestuia.Aceast&#259; substan&#355;&#259; nu trebuie s&#259; apar&#259; &#238;n produsele cosmetice, deoarece este extrem de d&#259;un&#259;toare. </p>
+			</td>
+			<td>
+				<img class="poza" src="ruj.png" width="150px" height="100px" id="text101" style="display: none;">
+			</td>
+			<script type="text/javascript">	
+			$(function() {
+				$('#text9').on('click', function() {
+					$('#text10').show(1500);
+					$('#text101').fadeIn(1500);
+				});
+			});
+			</script>
+		</tr>
+		<tr>
+			<td>
+				<div class="flip3D">
+					<div class="back" align="center"><p style="margin-top: 20%"><font size="20px"><b><p id="text11"> Nave marine </p></font></b></div>
+					<div class="front"><img src="wonder.png" width="200px" height="200px"></div>
+				</div>
+			</td>
+			<td width="250px" height="100px">
+				<p id="text12" style="display: none;  font-size: 24px;"> Densitatea sa mare contrabalanseaz&#259; efectul de &#238;nclinare al v&#226;ntului. Este folosit &#351;i de c&#259;tre scafandri la centura pe care ace&#351;tia o poart&#259; la br&#226;u pentru flotabilitatea acestora &#351;i a echipamentului. </p>
+
+			</td>
+			<td>
+				<img class="poza" src="nave.jpg" width="250px" height="100px" id="text121" style="display: none;">
+			</td>
+			<script type="text/javascript">	
+			$(function() {
+				$('#text11').on('click', function() {
+					$('#text12').show(1500);
+					$('#text121').fadeIn(1500);
+				});
+			});
+			</script>
+		</tr>
+		<tr>
+			<td>
+				<div class="flip3D">
+					<div class="back" align="center"><p style="margin-top: 40%"><b><p id="text13" style="font-size: 38px;"> Lum&#226;n&#259;ri </p></font></b></div>
+					<div class="front"><img src="wonder.png" width="200px" height="200px"></div>
+				</div>
+			</td>
+			<td width="250px" height="100px">
+				<p id="text14" style="display: none;  font-size: 24px;"> Plumbul mai este folosit uneori &#238;n lum&#226;n&#259;ri, &#238;n fitil, pentru a asigura o flac&#259;r&#259; mai durabil&#259;, mai constant&#259;.
+				</td>
+				<td>
+					<img class="poza" src="lumanare.png" width="200px" height="200px" id="text141" style="display: none;">
+				</td>
+				<script type="text/javascript">	
+				$(function() {
+					$('#text13').on('click', function() {
+						$('#text14').show(1500); 
+						$('#text141').fadeIn(1500); 
+					});
+				});
+				</script>
+			</tr>
+			<tr>
+				<td>
+					<div class="flip3D">
+						<div class="back" align="center"><p style="margin-top: 40%"><font size="20px"><b><p id="text15"> Muzic&#259; </p></font></b></div>
+						<div class="front"><img src="wonder.png" width="200px" height="200px"></div>
+					</div>
+				</td>
+				<td width="250px" height="100px">
+					<p id="text16" style="display: none;  font-size: 24px;">&#206;n muzic&#259; o &#238;nt&#226;lnim pe c&#226;nt&#259;rea&#355;a cu numele de scen&#259; "Plumb"(Tiffany Arbuckle), de asemenea, 
+						celebra trup&#259; Led Zeppelin &#238;&#351;i are originea numelui din eglezescul "lead" (=plumb).
+					</td>
+					<td>
+						<img class="poza" src="muzica.jpg" width="200px" height="200px" id="text161" style="display: none;">
+					</td>
+					<td>
+						<img class="poza" src="muzica2.jpg" width="200px" height="200px" id="text162" style="display: none;">
+					</td>
+				</tr>
+			</table>
+			<div align="center">
+				<table width="100%" align="center">
+					<tr>
+						<td width="50%"><video src="pasareplumb.mp4" width="400px" height="350px" id="vid1" style="display:none" controls>
+						</video></td>
+						<td width="50%"><video src="visatoriplumb.mp4" width="400px" height="350px" id="vid2" style="display:none" controls>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+			
+
+			<script type="text/javascript">	
+			$(function() {
+				$('#text15').on('click', function() {
+					$('#text16').show(1500);  
+					$('#text161').fadeIn(1500);
+					$('#text162').fadeIn(1500);
+					$('#vid1').fadeIn(1500);
+					$('#vid2').fadeIn(1500);
+				});
+			});
+			</script>
+			
+		</body>
+		</html>
+
+
+

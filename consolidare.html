@@ -1,0 +1,429 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+	<style>
+	html{
+		overflow: auto;
+	}
+	p{
+		font-size:22px;
+		font-family: 'Fertigo', sans serif;
+	}
+	td{
+		padding-left: 10px;
+	}
+	h1{
+		font-size: 28px;
+		color: #B41000;
+	}
+	.lacunar{
+		font-family: "Segoe Script";
+	}
+
+  	input[type="text"] { 
+    height: 30px; 
+    width: 100px; 
+    background-color: transparent;  
+    border-style: solid;  
+    border-width: 0px 0px 1px 0px;  
+    border-color: #B41000; 
+    outline:0; 
+    font-family: "Segoe Script";
+    color: #B41000;
+    font-size: 22px;
+  	} 
+	.poza{
+	height: 300px;
+	width: 300px;
+	}
+
+	</style>
+</head>
+<body>
+		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js" type="text/javascript"></script>
+		<script src="http://iamdanfox.github.io/typetype/jquery.typetype.min.js" type="text/javascript"></script>
+		<script src="static/jquery-1.9.1.min.js"></script>      
+		<script src="static/jquery-migrate-1.1.1.min.js"></script>
+		<script src="static/jquery.mobile-1.3.1.min.js"></script>
+	<font size="5px"><h2 style="font-size:32px; text-decoration: underline overline; text-align: center;">Consolidare</h2>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E timpul de testare! Dac&#259; ai fost atent vei putea rezolva exerci&#355;iile cu mare u&#351;urin&#355;&#259;.</p>
+		<h1 id="declan">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I. Gril&#259; de alegere</h1>
+
+			<form method="POST" action="php.php">	
+	<font id="content" style="display: none">
+			<img src="hint.png" align="left" id="hint" width="100px" height="100px"> Te vei "confrunta" cu 9 &#238;ntreb&#259;ri de tip gril&#259;. La final vei primi o not&#259;. Mult succes!<br><br>
+
+
+				<div align="center">
+					<table>
+						<tr>
+							<td width="50%">
+								<p>1. Ce determin&#259; plumbul in organism?<br>
+									<input type="radio" name="intr1" value="sept">Septicemie<br>
+									<input type="radio" name="intr1" value="scorb">Scorbut<br>
+									<input type="radio" name="intr1" value="saturn">Saturnism<br><br>
+								</p>
+							</td>
+							<td>
+								<p>2. Cu cine se &#238;nvecineaz&#259; plumbul &#238;n tabelul periodic?<br>
+									<input type="radio" name="intr2" value="tsip">Teliu &#351;i poloniu<br>
+									<input type="radio" name="intr2" value="tsib">Teliu &#351;i bismut<br>
+									<input type="radio" name="intr2" value="tsim">Teliu &#351;i mercur<br><br>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>3. Cine a scris poezia "Plumb"?<br>
+									<input type="radio" name="intr3" value="gc">George Co&#351;buc<br>
+									<input type="radio" name="intr3" value="gt">George Top&#226;rceanu<br>
+									<input type="radio" name="intr3" value="gb">George Bacovia<br><br>
+								</p>
+							</td>
+							<td>
+								<p>4. Ce con&#355;ine sticla de plumb?<br>
+									<input type="radio" name="intr4" value="112">1-12% oxid de plumb<br>
+									<input type="radio" name="intr4" value="1228">12-28% oxid de plumb<br>
+									<input type="radio" name="intr4" value="2840">28-40% oxid de plumb<br><br>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>5. Unde se g&#259;se&#351;te plumb?<br>
+									<input type="radio" name="intr5" value="ruj">&#206;n rujul de buze<br>
+									<input type="radio" name="intr5" value="balsam">&#206;n balsamul de p&#259;r<br>
+									<input type="radio" name="intr5" value="crema">&#206;n crema de fa&#355;&#259;<br><br>
+								</p>
+							</td>
+							<td>	<p>6. Plumbul prezint&#259;?<br>
+								<input type="radio" name="intr6" value="123">123 n<sup>o</sup><br>
+								<input type="radio" name="intr6" value="124">124 n<sup>o</sup><br>
+								<input type="radio" name="intr6" value="125">125 n<sup>o</sup> <br><br>
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>7. Care este un agent chelator?<br>
+								<input type="radio" name="intr7" value="etda">ETDA<br>
+								<input type="radio" name="intr7" value="edta">EDTA<br>
+								<input type="radio" name="intr7" value="eatd">EATD<br><br>
+							</p>
+						</td>
+						<td>
+							<p>8. &#206;n ce curent literar se incadreaz&#259; poezia "Plumb"?<br>
+								<input type="radio" name="intr8" value="sim">Simbolism <br>
+								<input type="radio" name="intr8" value="rom">Romantism <br>
+								<input type="radio" name="intr8" value="cla">Clasicism <br><br>
+							</p>
+						</td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<td>
+							<div align="center"><p>9. Care este reac&#355;ia reducerii plumbului la catodul acumulatoarelor autoturismelor?<br>
+								<input type="radio" name="intr9" value="react1"> PbO<sub>2</sub> + 4H<sup>+</sup> + SO<sub>4</sub><sup>2-</sup> + 2e<sup>-</sup> &rarr; PbSO<sub>4</sub> + 2 H<sub>2</sub>O <br>
+								<input type="radio" name="intr9" value="react2"> PbO<sub>2</sub> + 4H<sup>-</sup> + SO<sub>4</sub><sup>2-</sup> + 2e<sup>-</sup> &rarr; PbSO<sub>4</sub> + 2 H<sub>2</sub>O <br>
+								<input type="radio" name="intr9" value="react3"> PbO<sub>2</sub> + 4H<sup>+</sup> + SO<sub>4</sub><sup>2-</sup> + 2e<sup>-</sup> &rarr; PbSO<sub>3</sub> + 2 H<sub>2</sub>O <br><br>
+							</p>
+						</div>
+
+					</td>
+				</tr>
+			</table>
+		</div>
+</font>
+
+<h1 id="declan2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;II. Text lacunar</h1>
+
+<font id="content2" style="display: none">
+
+	<img src="hint.png" align="left" id="hint" width="100px" height="100px"> Te vei "confrunta" cu 5 texte lacunare. Utilizeaz&#259; cuvintele ce &#355;i se ofer&#259; la finalul propozi&#355;iilor. La final vei primi o not&#259;. Mult succes!<br><br>
+<font class="lacunar">
+		<table>
+			<tr><td style="font-size: 22px">
+				10. A) <input type="text" name="tifani" >, pe numele ei de scen&#259; Plumb, este c&#226;nt&#259;rea&#355;&#259;, B) <input type="text" name="compozitoare"> &#351;i autoare de origine C) <input type="text" name="americana">.
+				<br><br>
+			</td></tr>
+			<tr><td style="font-size: 22px">
+				11. George Bacovia a tr&#259;it &#238;ntre A) 18<input type="text" name="81"> - B) 19<input type="text" name="57">. El a fost un renumit simbolist de origine C) <input type="text" name="romana">. "Plumb" a fost poezia sa de D) <input type="text" name="debut">.
+				<br><br>
+			</td></tr>
+			<tr><td style="font-size: 22px">
+				12.Plumbul este un metal A) <input type="text" name="greu">, de culoare B) <input type="text" name="griargintie">, cu densitatea foarte C) <input type="text" name="mare">.
+				<br><br>
+			</td></tr>
+			<tr><td style="font-size: 22px">
+				13. A) <input type="text" name="foitele"> de plumb se folosesc ca material pentru acoperi&#351;, B) <input type="text" name="lambriuri">, burlane pentru scurgere. Acestea se folosesc &#351;i la izolarea C) <input type="text" name="fonica">.
+				<br><br>
+			</td></tr>
+			<tr><td style="font-size: 22px">
+				14. Saturnismul este un tip de A) <input type="text" name="intoxicatie"> &#351;i o afec&#355;iune &#238;n organism la nivelul B) <input type="text" name="vertebrelor">, fiind provocat de C) <input type="text" name="marirea"> nivelului de plumb din corp.
+				<br><br>
+			</td></tr>
+		</table>
+		<div align="center">
+			<table>
+				<tr>
+					<td style="font-size: 22px">&#149;vertebrelor / articulatiilor</td>
+					<td style="font-size: 22px">&#149;debut / final</td>
+					<td style="font-size: 22px">&#149;fonica / termica</td>
+					<td style="font-size: 22px">&#149;81/92</td>
+				</tr>
+				<tr>
+					<td style="font-size: 22px">&#149;mica / mare</td>
+					<td style="font-size: 22px">&#149;gri-argintie / albastra-verde</td>
+					<td style="font-size: 22px">&#149;foitele / sticla</td>
+					<td style="font-size: 22px">&#149;spaniola / americana</td>
+				</tr>
+				<tr>
+					<td style="font-size: 22px">&#149;Tiffany Arbuckle / Tiffany Trump</td>
+					<td style="font-size: 22px">&#149;faianta / lambriuri</td>
+					<td style="font-size: 22px">&#149;greu / usor</td>
+					<td style="font-size: 22px">&#149;marirea / micsorarea</td>
+				</tr>
+				<tr>
+					<td style="font-size: 22px">&#149;romana / maghiara</td>
+					<td style="font-size: 22px">&#149;alergie / intoxicatie</td>
+					<td style="font-size: 22px">&#149;publicista / compozitoare</td>
+					<td style="font-size: 22px">&#149;57/68</td>
+				</tr>
+			</table>
+		</div>
+
+</font>
+</font>
+
+<h1 id="declan3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;III. Adev&#259;rat sau fals?</h1>
+
+<font id="content3" style="display: none">
+
+	<img src="hint.png" align="left" id="hint" width="100px" height="100px"> Te vei "confrunta" cu 5 afirma&#355;ii ce pot fii adev&#259;rate sau false. Decide valoarea de adev&#259;r pentru fiecare propozi&#355;ie. La final vei primi o not&#259;. Mult succes!<br><br>
+<br>
+	15. Cei mai r&#259;sp&#226;ndi&#355;i compu&#351;i ai plumbului care se g&#259;sesc &#238;n natur&#259; sunt PbS &#351; PbO.<br><textarea name="cas1" id="case1" style="display:none"></textarea>
+	<img src="adevarat.png" width="50px" height="50px" id="but1" onclick="javascript:myFunctionu();"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="fals.png" width="50px" height="50px" id="but2" onclick="myFunctionu();"><br>
+
+	16. Poezia "Plumb" este alc&#259;tuit&#259; din 2 catrene, care corespund a dou&#259; planuri ale realit&#259;&#355;ii. <br><textarea name="cas2" id="case2" style="display:none"></textarea>
+	<img src="adevarat.png" width="50px" height="50px" id="but3" onclick="javascript:myFunctiond();"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="fals.png" width="50px" height="50px" id="but4" onclick="javascript:myFunctiond();"><br>
+
+	17. Leziunile articulare fac parte din simptomele pe care le determin&#259; saturnismul. <br><textarea name="cas3" id="case3" style="display:none"></textarea>
+	<img src="adevarat.png" width="50px" height="50px" id="but5" onclick="javascript:myFunctiont();"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="fals.png" width="50px" height="50px" id="but6" onclick="javascript:myFunctiont();"><br>
+
+	18. Plumbul este folosit la fitilul lum&#226;n&#259;rilor, pentru a oferi o flac&#259;r&#259; mai slab&#259;. <br><textarea name="cas4" id="case4" style="display:none"></textarea>
+	<img src="adevarat.png" width="50px" height="50px" id="but7" onclick="javascript:myFunctionp();"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="fals.png" width="50px" height="50px" id="but8" onclick="javascript:myFunctionp();"><br>
+
+	19. Densitatea mare a plumbului contrabalanseaz&#259; efectul de &#238;nclinare al v&#226;ntului. <br><textarea name="cas5" id="case5" style="display:none"></textarea>
+	<img src="adevarat.png" width="50px" height="50px" id="but9" onclick="javascript:myFunctionc();"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="fals.png" width="50px" height="50px" id="but10" onclick="javascript:myFunctionc();"><br>
+
+
+</font>
+<div align="center"><input type="image" src="trimite.png" alt="Submit" class="poza"></div>	
+</form>
+
+<audio id="audio" src="button.mp3"></audio>
+
+
+
+<script type="text/javascript">	
+$(function() {
+	$('#declan').on('click', function() {
+		$('#content').toggle(500);
+	});
+});
+</script>
+
+<script type="text/javascript">	
+$(function() {
+	$('#declan2').on('click', function() {
+		$('#content2').toggle(500);
+	});
+});
+
+</script>
+
+<script type="text/javascript">	
+$(function() {
+	$('#declan3').on('click', function() {
+		$('#content3').toggle(500);
+	});
+});
+
+</script>
+
+<script type="text/javascript">	
+				$(function() {
+					$('#but1').on('click', function() {
+						$('#case1').typetype("A", {
+							e: 0,
+							t: 20,
+
+						});
+					});
+				});
+
+</script>
+
+<script type="text/javascript">	
+				$(function() {
+					$('#but2').on('click', function() {
+						$('#case1').typetype("F", {
+							e: 0,
+							t: 20,
+
+						});
+					});
+				});
+
+</script>
+
+<script type="text/javascript">	
+				$(function() {
+					$('#but3').on('click', function() {
+						$('#case2').typetype("A", {
+							e: 0,
+							t: 20,
+
+						});
+					});
+				});
+
+</script>
+
+<script type="text/javascript">	
+				$(function() {
+					$('#but4').on('click', function() {
+						$('#case2').typetype("F", {
+							e: 0,
+							t: 20,
+
+						});
+					});
+				});
+
+</script>
+
+<script type="text/javascript">	
+				$(function() {
+					$('#but5').on('click', function() {
+						$('#case3').typetype("A", {
+							e: 0,
+							t: 20,
+
+						});
+					});
+				});
+
+</script>
+
+<script type="text/javascript">	
+				$(function() {
+					$('#but6').on('click', function() {
+						$('#case3').typetype("F", {
+							e: 0,
+							t: 20,
+
+						});
+					});
+				});
+
+</script>
+
+<script type="text/javascript">	
+				$(function() {
+					$('#but7').on('click', function() {
+						$('#case4').typetype("A", {
+							e: 0,
+							t: 20,
+
+						});
+					});
+				});
+
+</script>
+
+<script type="text/javascript">	
+				$(function() {
+					$('#but8').on('click', function() {
+						$('#case4').typetype("F", {
+							e: 0,
+							t: 20,
+
+						});
+					});
+				});
+
+</script>
+
+<script type="text/javascript">	
+				$(function() {
+					$('#but9').on('click', function() {
+						$('#case5').typetype("A", {
+							e: 0,
+							t: 20,
+
+						});
+					});
+				});
+
+</script>
+
+<script type="text/javascript">	
+				$(function() {
+					$('#but10').on('click', function() {
+						$('#case5').typetype("F", {
+							e: 0,
+							t: 20,
+
+						});
+					});
+				});
+
+</script>
+
+<script>
+function myFunctionu() {
+     document.getElementById("case1").value = "";
+      var audio = document.getElementById("audio");
+       audio.play();
+}
+</script>
+
+<script>
+function myFunctiond() {
+    document.getElementById("case2").value = "";
+     var audio = document.getElementById("audio");
+       audio.play();
+}
+</script>
+
+<script>
+function myFunctiont() {
+    document.getElementById("case3").value = "";
+     var audio = document.getElementById("audio");
+       audio.play();
+}
+</script>
+
+<script>
+function myFunctionp() {
+    document.getElementById("case4").value = "";
+     var audio = document.getElementById("audio");
+       audio.play();
+}
+</script>
+
+<script>
+function myFunctionc() {
+    document.getElementById("case5").value = "";
+     var audio = document.getElementById("audio");
+       audio.play();
+}
+</script>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<html>
+<head>
+<title> Plumb </title>
+<link rel="shortcut icon" href="logo.png">
+<link href="meniu.css" rel="stylesheet" type="text/css">
+<script>
+window.onscroll = function()
+{
+frames.ifr.document.documentElement.scrollTop = window.pageYOffset;
+frames.ifr.document.body.scrollTop = window.pageYOffset; 
+}
+</script>
+<script>
+window.onresize=function()
+{
+document.body.style.height = frames.ifr.document.body.offsetHeight + parseInt(document.getElementById('undiv').style.top) + parseInt(document.getElementById('undiv').style.bottom) + 'px';
+}
+</script>
+<style>
+	html{
+		overflow: auto;
+		height: 100%; 
+		background-image: url("bgplumb.jpg");
+        background-attachment: fixed;
+	}
+	.centrat { 
+		 margin: 0 auto;
+		 border: 3px solid #C36241; 
+		 border-width: 0 1px;
+		 background-color: #E5E2E3;
+		 opacity: 0.8;
+		 border-radius: 15px;
+	}
+	.loc{
+		border-radius: 15px;
+		border: 0px;
+		position: absolute;
+		height:100%;
+		width:100%;
+	}
+	.fixat{
+		position: fixed;
+		bottom: 10px;
+    	right: 10px;
+		opacity: 0.8; 
+		cursor: pointer; 
+	}
+	.fixat:hover{
+		opacity: 1;
+	}
+	.ceas{
+		position: fixed;
+		padding-right: 10px;
+    	right: 0px;
+    }
+    .staifix{
+        position: fixed;
+    }
+	.logo{
+	height:40px;
+	width:40px;
+	padding-left:10px;
+	}
+	.padi{
+	margin-top:7px;
+	}
+	.ghid{
+		position:fixed;
+		opacity: 0.8;
+	}
+	.ghid:hover{
+		opacity: 1;
+		cursor: pointer;
+	}
+	</style>
+<script>
+ 
+   function flash() {
+      var f = document.getElementById('flassh');
+      setInterval(function() {
+         f.style.display = (f.style.display == 'none' ? '' : 'none');
+      }, 1000);
+   }
+   
+
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+t=setTimeout(function(){startTime()},500);
+}
+
+function checkTime(i)
+{
+if (i<10)
+  {
+  i="0" + i;
+  }
+return i;
+}
+
+
+</script>
+<script type="text/javascript">
+		function delayer(){
+			alert("Timpul a expirat! Din pacate testul tau a fost suspendat, deoarece nu ai reusit sa rezolvi cerintele in timpul alocat.");
+			window.location = "acasa.html";
+    }
+    </script>
+</head>
+<body id="sch" onload="startTime()" onload="flash();" style="scroll-x:hidden;scroll-y:auto;" > <font face="comic sans ms" size="3">
+<div id="txt" align="right" class="ceas"> </div></font><a href="ghid.html" target="ifr">
+<img src="ghid.png" width="100px" height="100px" class="ghid"></a>
+<div align="center" >    
+<ul class="menu">
+    <li onmouseover="this.style.background='#008080';" onmouseout="this.style.background='#BDBDBD';"><a href="main.html" target="ifr" class="padi" >Acas&#259;</a></li>
+    <li onmouseover="this.style.background='#008080';" onmouseout="this.style.background='#BDBDBD';">
+        <a href="#" class="padi">Plumbul &#238;n...</a>
+        <ul>
+            <li onmouseover="this.style.background='#008080';" onmouseout="this.style.background='#BDBDBD';"> <a href="chimie.html" target="ifr">...chimie</a></li>
+            <li onmouseover="this.style.background='#008080';" onmouseout="this.style.background='#BDBDBD';"> <a href="romana.html" target="ifr">...rom&#226;n&#259;</a></li>
+            <li onmouseover="this.style.background='#008080';" onmouseout="this.style.background='#BDBDBD';"><a href="bio.html" target="ifr">...biologie</a></li>
+           
+        </ul>
+    </li>
+    <li onmouseover="this.style.background='#008080';" onmouseout="this.style.background='#BDBDBD';">
+        <a href="stiaica.html" target="ifr">&#350;tiai c&#259;?</a>
+               
+    </li>
+    <li onmouseover="this.style.background='#008080';" onmouseout="this.style.background='#BDBDBD';">
+        <a href="consolidare.html" target="ifr" class="padi" onclick="setTimeout('delayer()', 6000)">Consolidare</a> 
+    </li>
+    <li onmouseover="this.style.background='#008080';" onmouseout="this.style.background='#BDBDBD';">
+        <a href="despre.html" target="ifr" class="padi">Despre</a>   
+    </li>
+    <li onmouseover="this.style.background='#008080';" onmouseout="this.style.background='#BDBDBD';">
+        <a href="bibliografie.html" target="ifr" class="padi">Bibliografie</a> 
+    </li>
+
+</ul><script src="http://code.jquery.com/jquery-2.1.1.min.js"></script><script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+</div>
+	<div id="undiv" class="centrat" style="position: fixed; left: 10%; top: 80px; right: 10%; bottom: 15px;">
+	<iframe class="loc" src="main.html" name="ifr" scrolling="no" onload = "document.body.style.height = frames.ifr.document.body.offsetHeight + parseInt(document.getElementById('undiv').style.top) + parseInt(document.getElementById('undiv').style.bottom) + 'px'" >>
+	</iframe> 
+	</div>
+		<a href="trim.html" target="ifr"><img src="email.gif" width="100px" height="100px" class="fixat"></a>
+	
+	<script>
+	$(window).scroll(function() {
+    if ($(window).scrollTop()) {
+        $('menu').addClass('staifix');
+    } else {
+        $('menu').removeClass('staifix');
+    }
+	});
+	</script>
+
+
+</body>
+</html>

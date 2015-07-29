@@ -1,0 +1,75 @@
+<html>
+<head>
+<style>
+	iframe{
+		border: none;
+		display: none;
+		overflow: auto;
+	}
+	.zoom{
+	zoom: 90%;
+	}
+</style>
+</head>
+<body>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<font size="28"><h1 style="font-size:32px; text-decoration: underline overline; text-align: center;">Jocurii</h1></font><br>
+<table align="center">
+<tr>
+<td>
+<img src="mark.png" height="250px" width="250px" id="rebusdec"></p>
+<iframe width="400px" height="400px" src="Rebus.htm" id="rebus"></iframe>
+</td>
+<td>
+<img src="mark.png" height="250px" width="250px" id="anadec">
+<iframe width="400px" height="400px" src="joculet.swf" id="ana"></iframe>
+</td>
+</tr>
+<tr>
+<td>
+<img src="mark.png" height="250px" width="250px" id="mapdec">
+<iframe width="400px" height="450px" src="map.html" id="map"></iframe>
+</td>
+<td>
+
+<img src="mark.png" height="250px" width="250px" id="cuvd">
+<iframe width="400px" height="450px" src="cuvinte.html" id="cuv"> </iframe>
+</td>
+</tr>
+</table>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<script>
+	$(function() {
+			$('#rebusdec').on('click', function() {
+			 $('#rebus').fadeIn(500);
+			 $('#rebusdec').fadeOut(500);
+			});
+	});
+</script>
+<script>
+	$(function() {
+			$('#anadec').on('click', function() {
+			 $('#ana').fadeIn(500);
+			 $('#anadec').fadeOut(500);
+			});
+	});
+</script>
+<script>
+	$(function() {
+			$('#mapdec').on('click', function() {
+			 $('#map').fadeIn(500);
+			 $('#mapdec').fadeOut(500);
+			});
+	});
+</script>
+<script>
+	$(function() {
+			$('#cuvd').on('click', function() {
+			 $('#cuv').fadeIn(500);
+			 $('#cuvd').fadeOut(500);
+			});
+	});
+</script>
+</body>
+</html>
+<a href='http://thewordsearch.com/puzzle/8308/' class="zoom">

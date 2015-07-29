@@ -1,0 +1,141 @@
+<html>
+<head>
+	<title>Plumbul in chimie</title>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+	<style>
+	html{
+		overflow: auto;
+	}
+	.omu{
+		top: 0; 
+		right: 0; 
+		padding-right: 10px;
+		position:absolute;
+	}
+	.omu:hover{
+		width: 300px;
+		height: 300px;
+	}
+	p{
+		font-size:22px;
+		font-family: 'Fertigo', sans serif;
+	}
+	.text{
+		font-size:22px;
+		font-family: 'Fertigo', sans serif;
+	}
+	.poza{
+		display: none;
+		width: 300px;
+		height: 300px;
+		
+	}
+	.tabel{
+		border: none;
+		margin: auto;
+	}
+	.util{
+		background-color: #C36241;
+		padding: 5px 5px 5px 5px; 
+		border: 1px solid black;
+		border-radius: 5px;
+	}
+	.tbl{
+		border-right: 10px;
+	}
+	.per{
+		text-decoration: none;
+		color: black;
+	}
+	.tbl{
+		font-size: 38;
+		font-family: Comic sans ms;
+		text-decoration: underline overline; 
+	}
+	</style>
+</head>
+<body>
+	<img src="Sigur va fi interesant2.png" class="omu" width="200px" height="200px">
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<font size="28"><h1 style="font-size:32px; text-decoration: underline overline; text-align: center;">Plumbul - tematic&#259; abordat&#259; &#238;n chimie</h1></font>
+	<font face="copper black" size="4px">
+		<p>&#149; Plumbul este un metal greu, de culoare gri-argintie cu densitatea foarte mare. <button id="1">Vreau poz&#259;!</button></p> 
+		<img src="unpb.png" width="640px" height="320px" style="display: none; border-radius:5px; " id="2"> </font>
+		<script type="text/javascript">	
+		$(function() {
+			$('#1').on('click', function() {
+				$('#2').toggle(500);
+			});
+		});
+		</script>
+		<p>&#149; Pozi&#355;ia plumbului &#238;n tabelul periodic: 
+			<br><img src="pozitia in tabel.png" width="800px" height="560px"><br>Aceasta este situat&#259; &#238;n grupa 14 sau IV A &#351;i perioada 6, blocul elementelor p, av&#226;nd ca vecini metalele Teliu (Tl) &#351;i Bismut (Bi).</div></p>
+			<center><font class="tbl"><a class="per" href="tabelper.html"> &rarr; Vreau s&#259; studiez tabelul periodic! &larr; </a> </center><br></font>
+			
+			<p><b>&#149; Ob&#355;inerea plumbului </b>
+				<br>->Plumbul se g&#259;se&#351;te &#238;n natur&#259; sub form&#259; de minereu, din care este extras.
+				Cei mai r&#259;sp&#226;ndi&#355;i compu&#351;i care se g&#259;sesc &#238;n natur&#259; sunt:<font color="#B41000"> <div id="pbs" class="text">-sulfura de plumb - PbS (galen&#259;)</div><br><img src="pbspoza.jpg" id="pbspoza" class="poza">  <div id="pbco3" class="text">-carbonatul de plumb - PbCO<sub>3</sub></div><img src="pbco3poza.jpg" id="pbco3poza" class="poza"></font>.
+				<script type="text/javascript">	
+				$(function() {
+					$('#pbs').on('click', function() {
+						$('#pbspoza').toggle(500);
+					});
+				});
+				</script>
+				<script type="text/javascript">	
+				$(function() {
+					$('#pbco3').on('click', function() {
+						$('#pbco3poza').toggle(500);
+					});
+				});
+				</script>
+				<br> <p><b>&#149; Configura&#355;ia electronic&#259; a plumbului: </b>
+				<br>
+				<table class="tabel" >
+					<tr>
+						<td>
+							<iframe src="http://tube.geogebra.org/m/1432209" width="800px" height="450px" style="overflow:hidden;"></iframe>
+						</td>
+					</tr>
+				</table>
+				<br><br><br><br><br>
+				<p><b>&#149; Ce utilit&#259;&#355;i are plumbul? </p></b><br>
+				<img src="button.png" width="25px" height="25px"><font style="font-size:22px; font-family: 'Fertigo', sans serif;">&nbsp;&nbsp;Pl&#259;cu&#355;ele de plumb se utilizeaz&#259; la fabricarea acumulatorilor pentru autoturisme. <br>
+				<table>
+					<tr>
+						<td>
+							<div class="util"><font size="4px">
+								<u><b>La &#238;nc&#259;rcarea acumulatorului:</u></b><br>
+								&#149; La electrodul pozitiv (anodul): PbO<sub>2</sub> &larr; PbSO<sub>4</sub> Electrolit: H<sub>2</sub>SO<sub>4</sub><br>
+								&#149; La electrodul negativ (catodul): PbSO<sub>4</sub> &rarr; Pb Electrolit: H<sub>2</sub>SO<sub>4</sub><br>
+								C&#226;nd este &#238;n func&#355;iune procesul este invers, &#351;i are loc p&#226;n&#259; la epuizarea ionilor sulfat din solu&#355;ia de acid sulfuric, dac&#259; acumulatorul nu este &#238;nc&#259;rcat.<br>
+
+								<u><b>&#206;n func&#355;iune:</u></b><br>
+								&#149;La catod are loc reducerea plumbului: PbO<sub>2</sub> + 4H<sup>+</sup> + SO<sub>4</sub><sup>2-</sup> + 2e<sup>-</sup> &rarr; PbSO<sub>4</sub> + 2 H<sub>2</sub>O <br>
+
+								&#149;La anod are loc oxidarea: Pb + SO<sub>4</sub><sup>2-</sup> &rarr; PbSO<sub>4</sub> + 2e<sup>-</sup> <br>
+
+							</div>
+						</td>
+						<td>
+							<img src="acumulator.png" width="200px" height="200px">
+						</td>
+					</tr>
+				</table>
+				<br>
+
+
+
+				<img src="button.png" width="25px" height="25px">&nbsp;&nbsp; Plumbul este folosit &#238;n protejare radia&#355;iilor, cum ar fi razele Rontgen &#238;n radiologie.<br><br>
+				<img src="button.png" width="25px" height="25px">&nbsp;&nbsp; Acest metal este ad&#259;ugat la alam&#259; (aliaj de cupru &#351;i zinc) pentru a reduce uzura ma&#351;inilor de t&#259;iere a metalelor.<br><br>
+				<img src="button.png" width="25px" height="25px">&nbsp;&nbsp; Semiconductorii pe baz&#259; de plumb, precum telura sau selenura de plumb &#238;&#351;i g&#259;sesc aplica&#355;ii &#238;n celulele fotovoltaice &#351;i detectoarele cu infraro&#351;u.
+				<br>
+				<div align="center"><img src="tepade.png" width="600px" height="400px"></div>
+				<br>
+				<img src="button.png" width="25px" height="25px">&nbsp;&nbsp; Experiment: 2 KI + Pb(NO<sub>3</sub>)<sub>2</sub> &rarr; PbI<sub>2</sub> + 2 KNO<sub>3</sub><br>
+				<div align="center"><video src="experimentchimie.mp4" controls height="400px" width="600px"></div>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+			</body>
+			</html>
